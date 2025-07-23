@@ -178,7 +178,7 @@
 </tr>
 </tbody></table>
 <ol>
-<li><code>v-for</code><br>**作用：**列表渲染，遍历容器的元素或者对象的属性<br><strong>语法：</strong></li>
+<li><code>v-for</code><br>作用：列表渲染，遍历容器的元素或者对象的属性<br><strong>语法：</strong></li>
 </ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in items&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span>&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>参数：</strong></p>
@@ -187,17 +187,17 @@
 <li>item 为遍历出来的元素</li>
 <li>index 为索引&#x2F;下标，从0开始 ；可以省略，省略index语法： v-for &#x3D; “item in items”<br><strong>key：</strong></li>
 <li>作用：给元素添加的唯一标识，便于vue进行列表项的正确排序复用，提升渲染性能</li>
-<li>推荐使用id作为key（唯一），不推荐使用index作为key（会变化，不对应）<br>**注意：**遍历的数组，必须在data中定义； 要想让哪个标签循环展示多次，就在哪个标签上使用 v-for 指令。</li>
+<li>推荐使用id作为key（唯一），不推荐使用index作为key（会变化，不对应）<br><strong>注意：遍历的数组，必须在data中定义； 要想让哪个标签循环展示多次，就在哪个标签上使用 v-for 指令。</strong></li>
 </ul>
 <ol start="2">
-<li><code>v-bind</code><br>**作用：**动态为HTML标签绑定属性值，如设置href，src，style样式等。<br><strong>语法：</strong> <code>v-bind:属性名=&quot;属性值&quot;</code>  <img v-bind:src="item.image" width="30px"><br><strong>简化：</strong><code>:属性名=&quot;属性值&quot;</code>  <img :src="item.image" width="30px"><br>**注意：**v-bind 所绑定的数据，必须在data中定义&#x2F;或基于data中定义的数据而来。</li>
-<li><code>v-if</code> &amp; <code>v-show</code><br>**作用：**这两类指令，都是用来控制元素的显示与隐藏的<br><strong>v-if：</strong></li>
+<li><code>v-bind</code><br>作用：动态为HTML标签绑定属性值，如设置href，src，style样式等。<br><strong>语法：</strong> <code>v-bind:属性名=&quot;属性值&quot;</code>  <img v-bind:src="item.image" width="30px"><br><strong>简化：</strong><code>:属性名=&quot;属性值&quot;</code>  <img :src="item.image" width="30px"><br><strong>注意：v-bind 所绑定的数据，必须在data中定义&#x2F;或基于data中定义的数据而来。</strong></li>
+<li><code>v-if</code> &amp; <code>v-show</code><br>作用：这两类指令，都是用来控制元素的显示与隐藏的<br><strong>v-if：</strong></li>
 </ol>
 <ul>
 <li>语法：v-if&#x3D;”表达式”，表达式值为 true，显示；false，隐藏</li>
 <li>原理：基于条件判断，来控制创建或移除元素节点（条件渲染）</li>
 <li>场景：要么显示，要么不显示，不频繁切换的场景</li>
-<li>其它：可以配合 v-else-if &#x2F; v-else 进行链式调用条件判断<br>**注意：**v-else-if必须出现在v-if之后，可以出现多个； v-else 必须出现在v-if&#x2F;v-else-if之后。<br><strong>v-show：</strong></li>
+<li>其它：可以配合 v-else-if &#x2F; v-else 进行链式调用条件判断<br><strong>注意：v-else-if必须出现在v-if之后，可以出现多个； v-else 必须出现在v-if&#x2F;v-else-if之后。</strong><br><strong>v-show：</strong></li>
 <li>语法：v-show&#x3D;”表达式”，表达式值为 true，显示；false，隐藏</li>
 <li>原理：基于CSS样式display来控制显示与隐藏</li>
 <li>场景：频繁切换显示隐藏的场景</li>
@@ -211,14 +211,14 @@
 <li>这里的双向数据绑定，是指 Vue中的数据变化，会影响视图中的数据展示 。 视图中的输入的数据变化，也会影响Vue的数据模型 。<br>**注意：**v-model 中绑定的变量，必须在data中定义。</li>
 </ul>
 <ol start="5">
-<li><code>v-on</code><br>**作用：**为html标签绑定事件（添加时间监听）<br><strong>语法：</strong></li>
+<li><code>v-on</code><br>作用：为html标签绑定事件（添加时间监听）<br><strong>语法：</strong></li>
 </ol>
 <ul>
 <li>v-on:事件名&#x3D;”方法名” </li>
 <li>简写为 @事件名&#x3D;”…”</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我一下试试&quot;</span> <span class="attr">v-on:click</span>=<span class="string">&quot;handle&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我一下试试&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;handle&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这里的handle函数，就需要在Vue应用实例创建的时候创建出来，在methods定义。<br>**注意：**methods函数中的this指向Vue实例，可以通过this获取到data中定义的数据。</p>
+<p>这里的handle函数，就需要在Vue应用实例创建的时候创建出来，在methods定义。<br><strong>注意：</strong><br>methods函数中的this指向Vue实例，可以通过this获取到data中定义的数据。</p>
 <h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>介绍:Asynchronous JavaScript And XML，异步的JavaScript和XML。</p>
 <ul>
 <li>XML:(英语:Extensible Markup Language)可扩展标记语言，本质是一种数据格式，可以用来存储复杂的数据结构。<br><strong>作用</strong></li>
