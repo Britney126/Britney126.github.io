@@ -22,7 +22,7 @@
 
   
 
-  <title>Vue+Ajax | Britney&#39;s Blog</title>
+  <title>Britney&#39;s Blog</title>
 
   
 
@@ -46,7 +46,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://img.geekie.site/i/britney/2025/07/23/154500.jpg)"></div>
+    <div class="post-image" style="background-image: url(D:\Blog\source\img\微信图片_20250708150353.jpg)"></div>
   
 
   <!-- navbar -->
@@ -99,23 +99,21 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Vue+Ajax</h1>
+          <h1 class="title-wrap"></h1>
           <h2 class="title-sub-wrap">
             <strong>Britney</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2025-07-22T16:00:00.000Z" itemprop="datePublished">2025-07-23</time>
+            <time  class="article-date" datetime="2025-07-31T02:44:04.827Z" itemprop="datePublished">2025-07-31</time>
           </h2>
           
           
-            <h2 id="/2025/07/23/vue-Ajax/" class="title-sub-wrap leancloud_visitors" data-flag-title="Vue+Ajax">
+            <h2 id="/2025/07/31/maven/" class="title-sub-wrap leancloud_visitors" data-flag-title="">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/%E7%AC%94%E8%AE%B0/">📒 笔记</a></li>
-    
 </ul>
           <ul class="wrap-list dark">
   
@@ -141,102 +139,23 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>一种用于构建用户界面的渐进式的 JavaScript 框架。<br>官方：<a target="_blank" rel="noopener" href="https://cn.vuejs.org/">https://cn.vuejs.org/</a><br><img src="https://img.geekie.site/i/britney/2025/07/23/114930.png"></p>
-<h3 id="vue使用步骤"><a href="#vue使用步骤" class="headerlink" title="vue使用步骤"></a>vue使用步骤</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Vue-快速入门<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span>      <span class="comment">&lt;!--定义div标签，交给vue控制 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  <span class="comment">&lt;!-- 用插值表达式渲染 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;count&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="comment">//引入vue模块（createApp）</span></span></span><br><span class="line"><span class="language-javascript"><span class="string">&#x27;https://unpkg.com/vue@3/dist/vue.esm-browser.js&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">createApp</span>(&#123; <span class="comment">//调用函数创建Vue实例</span></span></span><br><span class="line"><span class="language-javascript">      <span class="title function_">data</span>(<span class="params"></span>) &#123;   <span class="comment">//定义数据</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="language-javascript">          <span class="attr">message</span>: <span class="string">&#x27;Hello Vue&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">          <span class="attr">count</span>: <span class="number">100</span></span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">      &#125;</span></span><br><span class="line"><span class="language-javascript">    &#125;).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img.geekie.site/i/britney/2025/07/23/142758.png"></p>
-<h3 id="Vue常用指令"><a href="#Vue常用指令" class="headerlink" title="Vue常用指令"></a>Vue常用指令</h3><p>指令:HTML标签上带有 V-前缀的特殊属性，不同的指令具有不同的含义，可以实现不同的功能。</p>
-<table>
-<thead>
-<tr>
-<th><strong>指令</strong></th>
-<th><strong>作用</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>v-for</code></td>
-<td>列表渲染，遍历容器的元素或对象的属性</td>
-</tr>
-<tr>
-<td><code>v-bind</code></td>
-<td>为 HTML 标签绑定属性值，如设置 <code>href</code>、<code>css</code>样式等</td>
-</tr>
-<tr>
-<td><code>v-if / v-else-if / v-else</code></td>
-<td>条件渲染某元素，判断为 <code>true</code> 时渲染，否则不渲染</td>
-</tr>
-<tr>
-<td><code>v-show</code></td>
-<td>根据条件展示元素，区别在于切换的是 <code>display</code> 属性</td>
-</tr>
-<tr>
-<td><code>v-model</code></td>
-<td>在表单元素上创建双向数据绑定</td>
-</tr>
-<tr>
-<td><code>v-on</code></td>
-<td>为 HTML 标签绑定事件</td>
-</tr>
-</tbody></table>
+        <h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><p>Maven是一款用于管理和构建java项目的工具，是Apache旗下的一个开源项目，它基于项目对象模型（POM）的概念，通过一小段描述信息来管理项目的构建。</p>
+<blockquote>
+<p>Apache 软件基金会，成立于1999年7月，是目前世界上最大的最受欢迎的开源软件基金会，也是一个专门为支持开源项目而生的非盈利性组织。<br>开源项目：<a target="_blank" rel="noopener" href="https://www.apache.org/index.html#projects-list">https://www.apache.org/index.html#projects-list</a></p>
+</blockquote>
+<p>作用：</p>
 <ol>
-<li><code>v-for</code><br>作用：列表渲染，遍历容器的元素或者对象的属性<br><strong>语法：</strong></li>
+<li>方便的依赖管理</li>
+<li>标准的项目关键流程</li>
+<li>统一的项目结构<br>官网：<a target="_blank" rel="noopener" href="https://maven.apache.org/">https://maven.apache.org/</a></li>
 </ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,index) in items&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span>&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>参数：</strong></p>
-<ul>
-<li>items 为遍历的数组</li>
-<li>item 为遍历出来的元素</li>
-<li>index 为索引&#x2F;下标，从0开始 ；可以省略，省略index语法： v-for &#x3D; “item in items”<br><strong>key：</strong></li>
-<li>作用：给元素添加的唯一标识，便于vue进行列表项的正确排序复用，提升渲染性能</li>
-<li>推荐使用id作为key（唯一），不推荐使用index作为key（会变化，不对应）<br><strong>注意：遍历的数组，必须在data中定义； 要想让哪个标签循环展示多次，就在哪个标签上使用 v-for 指令。</strong></li>
-</ul>
-<ol start="2">
-<li><code>v-bind</code><br>作用：动态为HTML标签绑定属性值，如设置href，src，style样式等。<br><strong>语法：</strong> <code>v-bind:属性名=&quot;属性值&quot;</code>  <img v-bind:src="item.image" width="30px"><br><strong>简化：</strong><code>:属性名=&quot;属性值&quot;</code>  <img :src="item.image" width="30px"><br><strong>注意：v-bind 所绑定的数据，必须在data中定义&#x2F;或基于data中定义的数据而来。</strong></li>
-<li><code>v-if</code> &amp; <code>v-show</code><br>作用：这两类指令，都是用来控制元素的显示与隐藏的<br><strong>v-if：</strong></li>
-</ol>
-<ul>
-<li>语法：v-if&#x3D;”表达式”，表达式值为 true，显示；false，隐藏</li>
-<li>原理：基于条件判断，来控制创建或移除元素节点（条件渲染）</li>
-<li>场景：要么显示，要么不显示，不频繁切换的场景</li>
-<li>其它：可以配合 v-else-if &#x2F; v-else 进行链式调用条件判断<br><strong>注意：v-else-if必须出现在v-if之后，可以出现多个； v-else 必须出现在v-if&#x2F;v-else-if之后。</strong><br><strong>v-show：</strong></li>
-<li>语法：v-show&#x3D;”表达式”，表达式值为 true，显示；false，隐藏</li>
-<li>原理：基于CSS样式display来控制显示与隐藏</li>
-<li>场景：频繁切换显示隐藏的场景</li>
-</ul>
-<ol start="4">
-<li><code>v-model</code></li>
-</ol>
-<ul>
-<li>作用：在表单元素上使用，双向数据绑定。可以方便的 获取 或 设置 表单项数据 </li>
-<li>语法：v-model&#x3D;”变量名”</li>
-<li>这里的双向数据绑定，是指 Vue中的数据变化，会影响视图中的数据展示 。 视图中的输入的数据变化，也会影响Vue的数据模型 。<br>**注意：**v-model 中绑定的变量，必须在data中定义。</li>
-</ul>
-<ol start="5">
-<li><code>v-on</code><br>作用：为html标签绑定事件（添加时间监听）<br><strong>语法：</strong></li>
-</ol>
-<ul>
-<li>v-on:事件名&#x3D;”方法名” </li>
-<li>简写为 @事件名&#x3D;”…”</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我一下试试&quot;</span> <span class="attr">v-on:click</span>=<span class="string">&quot;handle&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我一下试试&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;handle&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这里的handle函数，就需要在Vue应用实例创建的时候创建出来，在methods定义。<br><strong>注意：</strong><br>methods函数中的this指向Vue实例，可以通过this获取到data中定义的数据。</p>
-<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>介绍:Asynchronous JavaScript And XML，异步的JavaScript和XML。</p>
-<ul>
-<li>XML:(英语:Extensible Markup Language)可扩展标记语言，本质是一种数据格式，可以用来存储复杂的数据结构。<br><strong>作用</strong></li>
-</ul>
-<ul>
-<li>与服务器进行数据交换：通过Ajax可以给服务器发送请求，并获取服务器响应的数据。</li>
-<li>异步交互：可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术，如：<code>搜索联想</code>、用户名是否可用的校验等等。<br>示例：搜索词改变，页面不变<br><img src="https://img.geekie.site/i/britney/2025/07/23/151236.png"></li>
-</ul>
-<h3 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h3><p><strong>同步请求发送过程：</strong><br><img src="https://img.geekie.site/i/britney/2025/07/23/151733.png"><br>浏览器页面在发送请求给服务器，在服务器处理请求的过程中，浏览器页面不能做其他的操作。只能等到服务器响应结束后才能，浏览器页面才能继续做其他的操作。<br><strong>异步请求发送过程：</strong><br><img src="https://img.geekie.site/i/britney/2025/07/23/151753.png"><br>浏览器页面发送请求给服务器，在服务器处理请求的过程中，浏览器页面还可以做其他的操作。</p>
-<h3 id="Axios"><a href="#Axios" class="headerlink" title="Axios"></a>Axios</h3><p>介绍：Axios 对原生的Ajax进行了封装，简化书写，快速开发。<br>官网：<a target="_blank" rel="noopener" href="https://www.axios-http.cn/">https://www.axios-http.cn/</a><br>步骤：<br>-引入axios的js文件（参考官网）<br>-使用axios发送请求，并获取响应结果</p>
-<h3 id="Axios-请求方法别名"><a href="#Axios-请求方法别名" class="headerlink" title="Axios-请求方法别名"></a>Axios-请求方法别名</h3><p>Axios还针对不同的请求，提供了别名方式的api<br>具体格式如下：<br>axios.请求方式(url [, data [, config]])</p>
-<p>后面听不懂，没记了…</p>
 
       </section>
 
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -247,23 +166,6 @@
       
         <a href="/2025/07/29/markdown/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">Markdown基本语法</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://img.geekie.site/i/britney/2025/07/22/195517.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2025/07/22/js/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">JS</h2>
         </a>
       
       <div class="card-text--row">Older</div>
